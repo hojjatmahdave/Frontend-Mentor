@@ -8,11 +8,9 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+    font-family: 'Overpass', sans-serif;
+  
 }
 
 
