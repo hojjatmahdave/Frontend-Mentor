@@ -1,14 +1,16 @@
 import React from "react";
-import Start from "./ant-design/components/login-form/login-form";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import "./index.css";
-import App from "./ant-design/components/test-codes/Test";
+import App from "./news-homepage-main/container/app";
+
+// import "./index.css";
+import { GlobalStyles } from "./news-homepage-main/styles/gloabal";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <BrowserRouter>
+    <GlobalStyles />
     <App />
   </BrowserRouter>
 );
