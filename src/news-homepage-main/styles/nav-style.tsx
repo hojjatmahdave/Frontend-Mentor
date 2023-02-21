@@ -21,7 +21,7 @@ export const Links = styled.div`
     }
     @media screen and (max-width: 760px) {
       & > p {
-        padding: 0.4 rem;
+        padding: 0.4rem;
       }
     }
   }

@@ -4,7 +4,7 @@ export const AppStyle = styled.div`
   padding: 10rem 14rem;
   font-family: "Inter", sans-serif;
   @media screen and (max-width: 960px) {
-    padding: 4rem 8rem;
+    padding: 6rem 10rem;
   }
   @media screen and (max-width: 760px) {
     padding: 2rem 4rem;

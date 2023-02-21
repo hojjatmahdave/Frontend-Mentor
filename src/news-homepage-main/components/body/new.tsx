@@ -17,7 +17,7 @@ const New = () => {
             }`,
           }}
         >
-          <h2>{items.title}</h2>
+          <h3>{items.title}</h3>
           <p>{items.text}</p>
         </div>
       ))}
