@@ -1,15 +1,13 @@
 import React from "react";
 import { BodyStyle, LogoImg, ReadMore } from "../styles/body-style";
+import bodyLogo from "../assets/images/image-web-3-desktop.jpg";
 import Cards from "./body/cards";
 import New from "./body/new";
 
 const Body = () => {
   return (
     <BodyStyle>
-      <LogoImg
-        src="src/news-homepage-main/assets/images/image-web-3-desktop.jpg"
-        alt=""
-      />
+      <LogoImg src={bodyLogo} alt="" />
       <New />
       <h1>The Bright Future of Web 3.0?</h1>
       <ReadMore>

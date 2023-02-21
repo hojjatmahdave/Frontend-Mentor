@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const AppStyle = styled.div`
-  padding: 6rem 10rem;
+  padding: 10rem 14rem;
+  font-family: "Inter", sans-serif;
   @media screen and (max-width: 960px) {
     padding: 4rem 8rem;
   }

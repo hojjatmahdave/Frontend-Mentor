@@ -7,7 +7,16 @@ const New = () => {
     <NewStyle>
       <h1>New</h1>
       {NewData.map((items, index) => (
-        <div key={index}>
+        <div
+          key={index}
+          style={{
+            borderBottom: `${
+              items.title === "Is VC Funding Drying Up?"
+                ? ""
+                : "1px solid #7e7e7e"
+            }`,
+          }}
+        >
           <h2>{items.title}</h2>
           <p>{items.text}</p>
         </div>

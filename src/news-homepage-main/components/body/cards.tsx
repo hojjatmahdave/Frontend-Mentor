@@ -5,12 +5,14 @@ const Cards = () => {
   return (
     <CardsStyle>
       {CradData.map((items, index) => (
-        <>
+        <div key={index}>
           <ImageCard src={items.image} alt="" />
-          <h1>{items.number}</h1>
-          <h2>{items.title}</h2>
-          <p>{items.text}</p>
-        </>
+          <div>
+            <h1>{items.number}</h1>
+            <h3>{items.title}</h3>
+            <p>{items.text}</p>
+          </div>
+        </div>
       ))}
     </CardsStyle>
   );

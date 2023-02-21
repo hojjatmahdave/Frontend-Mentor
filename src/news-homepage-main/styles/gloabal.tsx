@@ -8,9 +8,8 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 body {
-    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
-    font-family: 'Overpass', sans-serif;
-  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');    font-family: 'Overpass', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 

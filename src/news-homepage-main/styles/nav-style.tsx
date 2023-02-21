@@ -5,6 +5,7 @@ export const NavStyle = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 2rem;
 `;
 export const Links = styled.div`
   display: flex;
