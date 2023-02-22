@@ -34,17 +34,39 @@ export const BodyStyle = styled.div`
   }
   @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(5, 1fr); */
     h1 {
       grid-column: 1;
       grid-row: 2;
-      line-height: 2.2rem;
+      line-height: 2.25rem;
       font-weight: 800;
       font-size: 2.3rem;
     }
   } ;
 `;
-export const LogoImg = styled.img`
+export const LogoImgDesktop = styled.img`
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  src: ${({ src }) => src};
+  alt: ${({ alt }) => alt};
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+`;
+export const LogoImgMobile = styled.img`
+  display: none;
+  @media screen and (max-width: 480px) {
+    display: inline;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    src: ${({ src }) => src};
+    alt: ${({ alt }) => alt};
+  }
   grid-column: 1/3;
   grid-row: 1/2;
   width: 100%;
@@ -53,6 +75,7 @@ export const LogoImg = styled.img`
   src: ${({ src }) => src};
   alt: ${({ alt }) => alt};
 `;
+
 export const ReadMore = styled.div`
   display: flex;
   flex-direction: column;
@@ -226,7 +249,7 @@ export const Flex = styled.div`
     }
   }
   @media screen and (max-width: 480px) {
-    line-height: 2rem;
+    line-height: 1.8rem;
     & > div {
       h1 {
         font-weight: 700;

@@ -5,13 +5,13 @@ import {
   Gaming,
   ImageCard,
   Laptops,
-  LogoImg,
+  LogoImgDesktop,
   Pcs,
   ReadMore,
+  LogoImgMobile,
 } from "../styles/body-style";
 import desktopLogo from "../assets/images/image-web-3-desktop.jpg";
 import mobileLogo from "../assets/images/image-web-3-mobile.jpg";
-// import Cards from "./body/cards";
 
 import pcs from "../assets/images/image-retro-pcs.jpg";
 import laptops from "../assets/images/image-top-laptops.jpg";
@@ -21,10 +21,8 @@ import New from "./body/new";
 const Body = () => {
   return (
     <BodyStyle>
-      <LogoImg
-        src={window.innerWidth <= 480 ? mobileLogo : desktopLogo}
-        alt=""
-      />
+      <LogoImgDesktop src={desktopLogo} alt="" />
+      <LogoImgMobile src={mobileLogo} alt="" />
       <New />
       <h1>The Bright Future of Web 3.0?</h1>
       <ReadMore>
