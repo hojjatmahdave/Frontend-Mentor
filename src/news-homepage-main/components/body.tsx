@@ -9,7 +9,8 @@ import {
   Pcs,
   ReadMore,
 } from "../styles/body-style";
-import bodyLogo from "../assets/images/image-web-3-desktop.jpg";
+import desktopLogo from "../assets/images/image-web-3-desktop.jpg";
+import mobileLogo from "../assets/images/image-web-3-mobile.jpg";
 // import Cards from "./body/cards";
 
 import pcs from "../assets/images/image-retro-pcs.jpg";
@@ -20,7 +21,10 @@ import New from "./body/new";
 const Body = () => {
   return (
     <BodyStyle>
-      <LogoImg src={bodyLogo} alt="" />
+      <LogoImg
+        src={window.innerWidth <= 480 ? mobileLogo : desktopLogo}
+        alt=""
+      />
       <New />
       <h1>The Bright Future of Web 3.0?</h1>
       <ReadMore>
@@ -31,7 +35,6 @@ const Body = () => {
         </p>
         <button> Read more</button>
       </ReadMore>
-
       <Pcs>
         <Flex>
           <ImageCard src={pcs} alt="" />
