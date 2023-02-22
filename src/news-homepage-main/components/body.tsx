@@ -3,6 +3,7 @@ import {
   BodyStyle,
   Flex,
   Gaming,
+  ImageCard,
   Laptops,
   LogoImg,
   Pcs,
@@ -33,7 +34,7 @@ const Body = () => {
 
       <Pcs>
         <Flex>
-          <img src={pcs} alt="" />
+          <ImageCard src={pcs} alt="" />
           <div>
             <h1>01</h1>
             <h3>Reviving Retro PCs</h3>
@@ -43,7 +44,7 @@ const Body = () => {
       </Pcs>
       <Laptops>
         <Flex>
-          <img src={laptops} alt="" />
+          <ImageCard src={laptops} alt="" />
 
           <div>
             <h1>02</h1>
@@ -54,7 +55,7 @@ const Body = () => {
       </Laptops>
       <Gaming>
         <Flex>
-          <img src={gaming} alt="" />
+          <ImageCard src={gaming} alt="" />
           <div>
             <h1>03</h1>
             <h3>The Growth of Gaming</h3>
