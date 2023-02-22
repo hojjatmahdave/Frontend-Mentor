@@ -26,12 +26,23 @@ export const BodyStyle = styled.div`
       font-size: 1.8rem;
     }
   }
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 580px) {
     gap: 1rem;
     h1 {
       font-size: 1.4rem;
     }
   }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(5, 1fr); */
+    h1 {
+      grid-column: 1;
+      grid-row: 2;
+      line-height: 2.2rem;
+      font-weight: 800;
+      font-size: 2.3rem;
+    }
+  } ;
 `;
 export const LogoImg = styled.img`
   grid-column: 1/3;
@@ -106,6 +117,20 @@ export const ReadMore = styled.div`
       font-size: 0.4rem;
       letter-spacing: 1.5px;
       padding: 0.3rem 0.8rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    grid-column: 1;
+    grid-row: 3;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    p {
+      font-size: 1rem;
+    }
+    button {
+      font-size: 0.8rem;
+      letter-spacing: 2.5px;
+      padding: 0.8rem 2.2rem;
     }
   }
 `;
@@ -200,23 +225,52 @@ export const Flex = styled.div`
       }
     }
   }
+  @media screen and (max-width: 480px) {
+    line-height: 2rem;
+    & > div {
+      h1 {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+      h3 {
+        font-weight: 800;
+        font-size: 1rem;
+      }
+      p {
+        width: 100%;
+        font-size: 0.95rem;
+      }
+    }
+  }
 `;
 export const Pcs = styled.div`
   grid-column: 1/2;
   grid-row: 3/4;
+  @media screen and (max-width: 480px) {
+    grid-column: 1;
+    grid-row: 5;
+  }
 `;
 export const Laptops = styled.div`
   grid-column: 2/3;
   grid-row: 3/4;
+  @media screen and (max-width: 480px) {
+    grid-column: 1;
+    grid-row: 6;
+  }
 `;
 export const Gaming = styled.div`
   grid-column: 3/4;
   grid-row: 3/4;
+  @media screen and (max-width: 480px) {
+    grid-column: 1;
+    grid-row: 7;
+  }
 `;
 export const ImageCard = styled.img`
   padding-right: 1rem;
-  cursor: pointer;
   height: 150px;
+  cursor: pointer;
 
   src: ${({ src }) => src};
   alt: ${({ alt }) => alt};
@@ -230,6 +284,11 @@ export const ImageCard = styled.img`
   }
   @media screen and (max-width: 580px) {
     height: 80px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-right: 1rem;
+    height: 150px;
+    width: auto;
   }
 `;
 export const NewStyle = styled.div`
@@ -331,6 +390,29 @@ export const NewStyle = styled.div`
       }
       p {
         font-size: 0.4rem;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    grid-column: 1;
+    grid-row: 4;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    h1 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    & > div {
+      line-height: 1.5rem;
+      padding: 1.5rem 0rem;
+      h3 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        padding: 0 0 1rem 0;
+      }
+      p {
+        color: #b3b3b3;
+        font-size: 0.9rem;
       }
     }
   }

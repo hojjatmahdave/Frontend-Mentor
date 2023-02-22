@@ -43,4 +43,7 @@ export const Links = styled.div`
       font-size: 0.6rem;
     }
   }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;

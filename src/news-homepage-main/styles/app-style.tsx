@@ -15,4 +15,7 @@ export const AppStyle = styled.div`
   @media screen and (max-width: 580px) {
     padding: 2rem 3rem;
   }
+  @media screen and (max-width: 480px) {
+    padding: 1rem;
+  }
 `;
