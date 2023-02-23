@@ -9,6 +9,9 @@ export const NavStyle = styled.div`
   img {
     width: 15%;
   }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 export const Links = styled.div`
   display: flex;
@@ -46,4 +49,34 @@ export const Links = styled.div`
   @media screen and (max-width: 480px) {
     display: none;
   }
+`;
+export const SideNav = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+`;
+export const SideLinks = styled.div`
+  background-color: #fff;
+  height: 100%; /* 100% Full-height */
+  width: 65%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+`;
+export const Container = styled.div`
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+  position: absolute;
+  top: 40px;
+  margin-top: 1rem;
+  min-width: 200px; */
 `;
