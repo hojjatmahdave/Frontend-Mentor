@@ -61,29 +61,33 @@ export const SideNav = styled.div`
   }
 `;
 export const SideLinks = styled.div`
-  display: none;
-  display: inline-block;
-  background-color: #fff;
-  height: 100%; /* 100% Full-height */
-  width: 65%; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-`;
-export const Container = styled.div`
-  @media screen and (max-width: 480px) {
-    /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-end;
-  text-align: end;
-  position: absolute;
-  top: 40px;
-  margin-top: 1rem;
-  min-width: 200px; */
+  background-color: #fff;
+  padding: 1rem;
+  height: 100%;
+  width: 65%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+
+  & > p {
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    width: 100%;
+    font-size: 1.2rem;
+    &:hover {
+      background-color: #ddd;
+    }
   }
+`;
+export const MenuStyle = styled.div`
+  cursor: pointer;
+`;
+export const ExitIcon = styled.div`
+  cursor: pointer;
+  padding-bottom: 5rem;
 `;

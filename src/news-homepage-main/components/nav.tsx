@@ -1,13 +1,29 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 import { ReactComponent as Exit } from "../assets/images/icon-menu-close.svg";
 import { ReactComponent as Menu } from "../assets/images/icon-menu.svg";
 
 import logo from "../assets/images/logo.svg";
-import { Links, NavStyle, SideLinks, SideNav } from "../styles/nav-style";
-const Nav = () => {
+import {
+  ExitIcon,
+  Links,
+  MenuStyle,
+  NavStyle,
+  SideLinks,
+  SideNav,
+} from "../styles/nav-style";
+type Props = {
+  Background: any;
+};
+const Nav = ({ Background }: Props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
-
+  const HandelSetToggleMenuOpen = () => {
+    setToggleMenu(!toggleMenu);
+    Background({ opacity: 0.75 });
+  };
+  const HandelSetToggleMenuClose = () => {
+    setToggleMenu(!toggleMenu);
+    Background({ opacity: 1 });
+  };
   return (
     <>
       <NavStyle>
@@ -22,28 +38,19 @@ const Nav = () => {
       </NavStyle>
       <SideNav>
         <img src={logo} alt="" />
-        {toggleMenu ? (
-          <Exit
-            onClick={() => {
-              setToggleMenu(false);
-            }}
-          />
-        ) : (
-          <Menu
-            onClick={() => {
-              setToggleMenu(true);
-            }}
-          />
-        )}
+        <MenuStyle>
+          {toggleMenu ? null : <Menu onClick={HandelSetToggleMenuOpen} />}
+        </MenuStyle>
         {toggleMenu && (
           <SideLinks>
-            <Container>
-              <p>Home</p>
-              <p>New</p>
-              <p>Popular</p>
-              <p>Trending</p>
-              <p>Categories</p>
-            </Container>
+            <ExitIcon>
+              <Exit onClick={HandelSetToggleMenuClose} />
+            </ExitIcon>
+            <p>Home</p>
+            <p>New</p>
+            <p>Popular</p>
+            <p>Trending</p>
+            <p>Categories</p>
           </SideLinks>
         )}
       </SideNav>
