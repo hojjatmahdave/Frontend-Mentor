@@ -22,7 +22,6 @@ const Nav = () => {
       </NavStyle>
       <SideNav>
         <img src={logo} alt="" />
-
         {toggleMenu ? (
           <Exit
             onClick={() => {

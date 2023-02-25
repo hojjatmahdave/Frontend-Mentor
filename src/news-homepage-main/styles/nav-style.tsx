@@ -51,13 +51,18 @@ export const Links = styled.div`
   }
 `;
 export const SideNav = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 2rem;
+  display: none;
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
 `;
 export const SideLinks = styled.div`
+  display: none;
+  display: inline-block;
   background-color: #fff;
   height: 100%; /* 100% Full-height */
   width: 65%; /* 0 width - change this with JavaScript */
@@ -70,7 +75,8 @@ export const SideLinks = styled.div`
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 `;
 export const Container = styled.div`
-  /* display: flex;
+  @media screen and (max-width: 480px) {
+    /* display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
@@ -79,4 +85,5 @@ export const Container = styled.div`
   top: 40px;
   margin-top: 1rem;
   min-width: 200px; */
+  }
 `;
