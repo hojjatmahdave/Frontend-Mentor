@@ -17,10 +17,13 @@ import pcs from "../assets/images/image-retro-pcs.jpg";
 import laptops from "../assets/images/image-top-laptops.jpg";
 import gaming from "../assets/images/image-gaming-growth.jpg";
 import New from "./body/new";
+type Props = {
+  background: any;
+};
 
-const Body = () => {
+const Body = ({ background }: Props) => {
   return (
-    <BodyStyle>
+    <BodyStyle style={{ ...background }}>
       <LogoImgDesktop src={desktopLogo} alt="" />
       <LogoImgMobile src={mobileLogo} alt="" />
       <New />

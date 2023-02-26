@@ -249,7 +249,7 @@ export const Flex = styled.div`
     }
   }
   @media screen and (max-width: 480px) {
-    line-height: 1.8rem;
+    line-height: 1.5rem;
     & > div {
       h1 {
         font-weight: 700;
@@ -261,7 +261,8 @@ export const Flex = styled.div`
       }
       p {
         width: 100%;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
       }
     }
   }
