@@ -5,12 +5,13 @@ import App from "./news-homepage-main/container/app";
 
 // import "./index.css";
 import { GlobalStyles } from "./news-homepage-main/styles/gloabal";
+import RoutePage from "./interactive-rating-component-main/components/RoutePage";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <BrowserRouter>
     <GlobalStyles />
-    <App />
+    <RoutePage />
   </BrowserRouter>
 );
