@@ -6,7 +6,7 @@ export const CardsStyles = styled.div<{ BG: string }>`
   position: relative;
   overflow: hidden;
   width: 260px;
-  height: 220px;
+  height: 240px;
   margin: 2rem;
   & > img {
     top: 0;

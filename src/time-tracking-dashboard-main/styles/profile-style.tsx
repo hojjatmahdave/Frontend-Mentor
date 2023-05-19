@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProfileStyle = styled.div`
   background-color: #1d204b;
   width: 280px;
-  height: 600px;
+  height: 550px;
   border-radius: 1rem;
 
   & > div:nth-child(1) {
