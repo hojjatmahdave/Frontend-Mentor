@@ -1,0 +1,15 @@
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { History, Main, Notfound, Topup } from "../indexs";
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/chat-box/register" element={<History />} />
+      <Route path="/topup" element={<Topup />} />
+      <Route path="/*" element={<Notfound />} />
+    </Routes>
+  );
+};
+
+export default App;
