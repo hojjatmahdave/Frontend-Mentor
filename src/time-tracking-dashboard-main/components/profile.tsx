@@ -11,7 +11,9 @@ const Profile = () => {
       </div>
       <div>
         <p>Daily</p>
+        <br />
         <p>Weekly</p>
+        <br />
         <p>Monthly</p>
       </div>
     </ProfileStyle>

@@ -13,6 +13,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <GlobalStyles />
-    <App />
+    <RoutePage />
   </BrowserRouter>
 );

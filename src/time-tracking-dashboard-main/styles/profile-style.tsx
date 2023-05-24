@@ -34,6 +34,7 @@ export const ProfileStyle = styled.div`
   & > div:nth-child(2) {
     margin: 2rem;
     & > p {
+      display: inline-block;
       padding-bottom: 1rem;
       font-size: 20px;
       color: #6a6fa7;
