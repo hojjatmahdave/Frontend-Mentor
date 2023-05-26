@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Result } from "antd";
 import { Link } from "react-router-dom";
 
-const Notfound: React.FC = () => (
+export const Notfound: React.FC = () => (
   <div
     style={{
       paddingTop: "200px",
@@ -22,5 +22,3 @@ const Notfound: React.FC = () => (
     />
   </div>
 );
-
-export default Notfound;

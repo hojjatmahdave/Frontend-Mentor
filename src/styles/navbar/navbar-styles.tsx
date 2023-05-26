@@ -1,26 +1,35 @@
 import styled from "styled-components";
 
-export const NavbarStyles = styled.div`
+export const NavbarStyles = styled.div<{ scroll: boolean }>`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100px;
-
+  height: 80px;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: ${({ scroll }) => (scroll ? "#fff" : "transparent")};
+  border-bottom: ${({ scroll }) =>
+    scroll ? "1px solid #ddd" : "1px solid transparent"};
   & > div {
     padding: 0 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 1000px;
-    max-width: 1000px;
-
+    width: 1100px;
+    max-width: 1100px;
+    & > div:nth-child(3) {
+      display: none;
+    }
     & > a > p {
-      font-weight: 700;
-      font-size: large;
+      font-size: xx-large;
+      font-weight: 1000;
       color: #095160;
+      font-family: "Fira Sans", sans-serif;
       &:hover {
         cursor: pointer;
       }
@@ -30,6 +39,7 @@ export const NavbarStyles = styled.div`
       flex-direction: row;
       justify-content: center;
       align-items: center;
+
       & > p {
         color: #095160;
         margin: 0 1rem;
@@ -41,24 +51,43 @@ export const NavbarStyles = styled.div`
           cursor: pointer;
         }
       }
+      & > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        color: #095160;
+        margin: 0 0.5rem;
+        font-size: medium;
+        font-family: "Poppins", sans-serif;
+        border-bottom: 1px solid transparent;
+        & > p {
+          padding: 0 0.35rem 0 0.2rem;
+        }
+        &:hover {
+          border-bottom: 1px solid #095160;
+          cursor: pointer;
+        }
+      }
       & > span {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-left: 2rem;
-        &:hover {
-          cursor: pointer;
-        }
-        & > p {
-          margin: 0 1.2rem;
-          font-size: medium;
-          color: #095160;
-          font-family: "Poppins", sans-serif;
-          border-bottom: 1px solid transparent;
-          transition: all ease-in-out 0.2;
+        margin-left: 1rem;
+        & > div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
           &:hover {
-            border-bottom: 1px solid #095160;
+            cursor: pointer;
+          }
+          & > p {
+            margin: 0 0.5rem;
+            font-size: medium;
+            color: #095160;
+            font-family: "Poppins", sans-serif;
           }
         }
         & > img {
@@ -77,6 +106,14 @@ export const NavbarStyles = styled.div`
       width: 900px;
       max-width: 900px;
       padding: 0 1rem;
+    }
+    @media screen and (max-width: 1025px) {
+      & > div:nth-child(2) {
+        display: none;
+      }
+      & > div:nth-child(3) {
+        display: block;
+      }
     }
   }
 `;

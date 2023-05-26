@@ -4,8 +4,8 @@ import { History, Main, Notfound, Topup } from "../indexs";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/chat-box/register" element={<History />} />
+      <Route path="/main" element={<Main />} />
+      <Route path="/history" element={<History />} />
       <Route path="/topup" element={<Topup />} />
       <Route path="/*" element={<Notfound />} />
     </Routes>
