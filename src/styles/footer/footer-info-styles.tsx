@@ -8,6 +8,7 @@ export const FooterInfoStyles = styled.div`
   justify-content: space-around;
   flex-direction: row;
   color: #004a59;
+  background-color: #ccfff6;
   font-family: "Poppins", sans-serif;
 
   & > div {

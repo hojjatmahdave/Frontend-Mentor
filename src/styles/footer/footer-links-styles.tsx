@@ -72,7 +72,7 @@ export const FooterLinksStyles = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 40vh;
+    height: 45vh;
     & > div:nth-child(2) {
       & > div {
         margin: 1rem;
