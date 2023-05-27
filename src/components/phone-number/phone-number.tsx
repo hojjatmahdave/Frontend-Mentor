@@ -6,7 +6,11 @@ export const PhoneNumber = () => {
   return (
     <PhoneNumberStyles>
       <span>Who are you sending top-up to?</span>
-      <PhoneInput value={value} onChange={() => setValue} />
+      <PhoneInput
+        placeholder="Enter number"
+        value={value}
+        onChange={() => setValue}
+      />
       <button>Start top-up</button>
     </PhoneNumberStyles>
   );
