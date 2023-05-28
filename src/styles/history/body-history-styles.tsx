@@ -52,6 +52,7 @@ export const BodyHistoryStyles = styled.div`
       }
     }
     & > div {
+      margin-bottom: 4rem;
       display: flex;
       flex-direction: column;
       align-items: center;

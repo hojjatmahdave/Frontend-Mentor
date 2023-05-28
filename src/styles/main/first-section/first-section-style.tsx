@@ -124,7 +124,6 @@ export const FirstSectionStyles = styled.div`
     & > div:nth-child(1) {
       padding: 0;
       & > div:first-child {
-        background-color: antiquewhite;
         padding: 0 2rem;
         & > h2 {
           font-size: 1.5rem;
