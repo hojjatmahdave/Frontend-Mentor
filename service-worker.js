@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Frontend-Mentor1/precache-manifest.01f8feba3ed6d398e1047f2f6e4a12b2.js"
+  "/Frontend-Mentor/precache-manifest.18418ea0bf89b096ff418e27714c6fb6.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Frontend-Mentor1/index.html", {
+workbox.routing.registerNavigationRoute("/Frontend-Mentor/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
